@@ -456,3 +456,54 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 08:34:00.073
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.SIMWbxUR => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 08:35:26.680
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 08:35:26.692
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@722c8a79[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=1002)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 08:35:26.699
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 08:35:34.941
+!MESSAGE 起動から初期化までの Boot LS 起動時間: 8231ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 08:35:35.318
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.qfuFpfIiisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 08:35:35.329
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 08:35:35.338
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 08:35:35.346
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 08:35:35.352
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 08:35:35.361
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.qfuFpfIi => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 08:35:35.367
+!MESSAGE classpath=34 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 08:35:35.381
+!MESSAGE buffering callback sts4.classpath.qfuFpfIi example false 34
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 08:35:35.390
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 08:35:35.399
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 08:35:35.408
+!MESSAGE buffering callback sts4.classpath.qfuFpfIi Part1 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 08:35:35.413
+!MESSAGE executing callback sts4.classpath.qfuFpfIi 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 08:35:36.636
+!MESSAGE executing callback sts4.classpath.qfuFpfIi SUCCESS [done]
