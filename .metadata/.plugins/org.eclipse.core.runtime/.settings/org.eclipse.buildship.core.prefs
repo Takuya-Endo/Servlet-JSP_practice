@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+arguments=-Porg.gradle.java.installations.paths\=C:/Users/home/Desktop/DMMWEBCAMP/Java/pleiades-2021-06-java-win-64bit-jre_20210629/pleiades/java/6,C:/Users/home/Desktop/DMMWEBCAMP/Java/pleiades-2021-06-java-win-64bit-jre_20210629/pleiades/java/7,C:/Users/home/Desktop/DMMWEBCAMP/Java/pleiades-2021-06-java-win-64bit-jre_20210629/pleiades/java/8,C:/Users/home/Desktop/DMMWEBCAMP/Java/pleiades-2021-06-java-win-64bit-jre_20210629/pleiades/java/11,C:/Users/home/Desktop/DMMWEBCAMP/Java/pleiades-2021-06-java-win-64bit-jre_20210629/pleiades/java/16
+auto.sync=true
+### Mac はビルドスクリプトでパス書き換え
+java.home=C:/Users/home/Desktop/DMMWEBCAMP/Java/pleiades-2021-06-java-win-64bit-jre_20210629/pleiades/java/11

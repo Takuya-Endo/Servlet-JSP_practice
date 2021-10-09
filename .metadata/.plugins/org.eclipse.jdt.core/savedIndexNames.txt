@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\home\Desktop\DMMWEBCAMP\Java\Servlet&JSP_practice\.metadata\.plugins\org.eclipse.jdt.core
+418361468.index
+1023358580.index
