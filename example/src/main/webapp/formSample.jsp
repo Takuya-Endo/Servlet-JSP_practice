@@ -14,8 +14,8 @@
 		名前：<br>
 		<input type="text" name="name"><br>
 		性別：<br>
-		<input type="radio" name="gender" value="0">
-		<input type="radio" name="gender" value="1">
+		男<input type="radio" name="gender" value="0">
+		女<input type="radio" name="gender" value="1">
 		<input type="submit" value="登録">
 		
 	</form>
