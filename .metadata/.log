@@ -589,3 +589,36 @@ java.lang.IllegalArgumentException: can not get a buffer without a document refe
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:09:20.523
 !MESSAGE executing callback sts4.classpath.zLxptRtA SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 15:26:19.257
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.zLxptRtA
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 15:26:19.266
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.zLxptRtA
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 15:26:19.270
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 15:26:19.274
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.zLxptRtA => OK
+
+!ENTRY org.eclipse.jface 2 0 2021-10-10 15:26:20.395
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-10-10 15:26:20.395
+!MESSAGE CTRL+SHIFT+C の競合が発生しました:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,行コメントの切り替え,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E 言語構成,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4c7bfa64,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,コメントの切り替え,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring 汎用テキスト・エディター,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@55c39797,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
