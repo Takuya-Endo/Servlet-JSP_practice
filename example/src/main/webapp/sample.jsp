@@ -6,7 +6,7 @@
 <%
 
 	String[] luckArray = {"超スッキリ", "スッキリ", "最悪"};
-	int index = (int) Math.random() * 3;
+	int index = (int) (Math.random() * 3);
 	String luck = luckArray[index];
 	
 	Date date = new Date();
