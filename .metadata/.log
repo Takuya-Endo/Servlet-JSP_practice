@@ -526,3 +526,66 @@ java.lang.IllegalArgumentException: can not get a buffer without a document refe
 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
 	at org.eclipse.wst.sse.core.indexing.AbstractIndexManager$ResourceEventProcessingJob.run(AbstractIndexManager.java:1559)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:08:10.776
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.qfuFpfIi
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:08:10.783
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.qfuFpfIi
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:08:10.790
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:08:10.796
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.qfuFpfIi => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:09:10.258
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:09:10.264
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@722c8a79[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=1002)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:09:10.270
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:09:18.600
+!MESSAGE 起動から初期化までの Boot LS 起動時間: 8321ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:09:19.024
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.zLxptRtAisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:09:19.034
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:09:19.041
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:09:19.047
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:09:19.052
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:09:19.057
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.zLxptRtA => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:09:19.065
+!MESSAGE classpath=34 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:09:19.081
+!MESSAGE buffering callback sts4.classpath.zLxptRtA example false 34
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:09:19.088
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:09:19.097
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:09:19.103
+!MESSAGE buffering callback sts4.classpath.zLxptRtA Part1 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:09:19.109
+!MESSAGE executing callback sts4.classpath.zLxptRtA 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-10 10:09:20.523
+!MESSAGE executing callback sts4.classpath.zLxptRtA SUCCESS [done]
