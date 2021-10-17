@@ -1493,3 +1493,66 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:33:23.319
 !MESSAGE executing callback sts4.classpath.LbVltbEv SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:45:31.115
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.LbVltbEv
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:45:31.121
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.LbVltbEv
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:45:31.127
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:45:31.133
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.LbVltbEv => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:49:59.695
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:49:59.701
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@5de9035e[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=1002)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:49:59.707
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:50:08.556
+!MESSAGE 起動から初期化までの Boot LS 起動時間: 8841ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:50:08.995
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.DntXPVvbisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:50:09.002
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:50:09.009
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:50:09.021
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:50:09.026
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:50:09.039
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.DntXPVvb => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:50:09.054
+!MESSAGE classpath=34 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:50:09.069
+!MESSAGE buffering callback sts4.classpath.DntXPVvb example false 34
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:50:09.076
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:50:09.088
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:50:09.094
+!MESSAGE buffering callback sts4.classpath.DntXPVvb Part1 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:50:09.100
+!MESSAGE executing callback sts4.classpath.DntXPVvb 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:50:10.539
+!MESSAGE executing callback sts4.classpath.DntXPVvb SUCCESS [done]

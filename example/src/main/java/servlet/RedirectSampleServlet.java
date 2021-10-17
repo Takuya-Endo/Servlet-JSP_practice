@@ -17,7 +17,8 @@ public class RedirectSampleServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		response.sendRedirect("sample.jsp");
+		//response.sendRedirect("sample.jsp");
+		response.sendRedirect("SampleServlet");
 		
 	}
 
