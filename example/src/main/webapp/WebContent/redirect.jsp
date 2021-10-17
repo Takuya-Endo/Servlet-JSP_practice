@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>奇数のページ</title>
 </head>
 <body>
-
+	<h1>リダイレクトされました。</h1>
+	<p>奇数を表示します。</p>
+	<p></p>
 </body>
 </html>
