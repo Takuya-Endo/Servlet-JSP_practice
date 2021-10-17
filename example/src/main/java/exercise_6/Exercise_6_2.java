@@ -1,7 +1,9 @@
 package exercise_6;
 
 import java.io.IOException;
+import java.util.Random;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,7 +19,18 @@ public class Exercise_6_2 extends HttpServlet {
        
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		int number = new Random().nextInt(10);
 		
+		if (number % 2 == 0) {
+			
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/WebContent/forward.jsp");
+			dispatcher.forward(request, response);
+			
+		} else {
+			
+			response.sendRedirect("WebContent/redirect.jsp");
+			
+		}
 		
 	}
 
