@@ -4,9 +4,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>スッキリ健康診断</title>
 </head>
 <body>
-
+	<h1>スッキリ健康診断</h1>
+	
+	<form action="/HealthCheck" method="post">
+	
+		<p>身長：<input type="text" name="height">(cm)</p>
+		<p>体重：<input type="text" name="weight">(kg)</p>
+		<input type="submit" value="診断">
+	
+	</form>
 </body>
 </html>
