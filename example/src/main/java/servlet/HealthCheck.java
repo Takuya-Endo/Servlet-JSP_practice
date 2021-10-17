@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import health.model.Health;
+import health.model.HealthCheckLogic;
 
 /**
  * Servlet implementation class HealthCheck
@@ -30,6 +31,12 @@ public class HealthCheck extends HttpServlet {
 		String height = request.getParameter("height");
 		String weight = request.getParameter("weight");
 		Health health = new Health(height, weight);
+		
+		HealthCheckLogic logic = new HealthCheckLogic();
+		String bmi = logic.checkBmi(height, weight);
+		health.setBmi(bmi);
+		String shape = logic.judgeBmi(bmi);
+		health.setShape(shape);
 		
 	}
 
