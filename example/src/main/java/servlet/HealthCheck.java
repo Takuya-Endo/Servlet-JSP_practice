@@ -38,6 +38,10 @@ public class HealthCheck extends HttpServlet {
 		String shape = logic.judgeBmi(bmi);
 		health.setShape(shape);
 		
+		request.setAttribute("health", health);
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/healthCheckResult.jsp");
+		dispatcher.forward(request, response);
+		
 	}
 
 }
