@@ -29,8 +29,7 @@ public class HealthCheck extends HttpServlet {
 		
 		String height = request.getParameter("height");
 		String weight = request.getParameter("weight");
-		
-		Health health = new Health();
+		Health health = new Health(height, weight);
 		
 	}
 
