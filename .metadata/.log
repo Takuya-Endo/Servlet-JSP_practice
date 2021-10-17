@@ -1418,3 +1418,78 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.eclipse.ui 2 2 2021-10-17 10:17:35.029
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:31:30.358
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.vSUQxDLS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:31:30.368
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.vSUQxDLS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:31:30.374
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:31:30.381
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.vSUQxDLS => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:33:12.258
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:33:12.265
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@5de9035e[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=1002)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:33:12.272
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-10-17 10:33:19.002
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:33:21.446
+!MESSAGE 起動から初期化までの Boot LS 起動時間: 9165ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:33:21.843
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.LbVltbEvisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:33:21.852
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:33:21.858
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:33:21.864
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:33:21.869
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:33:21.875
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.LbVltbEv => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:33:21.880
+!MESSAGE classpath=34 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:33:21.891
+!MESSAGE buffering callback sts4.classpath.LbVltbEv example false 34
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:33:21.900
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:33:21.910
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:33:21.916
+!MESSAGE buffering callback sts4.classpath.LbVltbEv Part1 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:33:21.922
+!MESSAGE executing callback sts4.classpath.LbVltbEv 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-17 10:33:23.319
+!MESSAGE executing callback sts4.classpath.LbVltbEv SUCCESS [done]
