@@ -15,5 +15,6 @@
 	<p>体重：<%= health.getWeight() %></p>
 	<p>BMI：<%= health.getBmi() %></p>
 	<p>体型：<%= health.getShape() %></p>
+	<a href="/example/HealthCheck">戻る</a>
 </body>
 </html>
