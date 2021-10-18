@@ -18,6 +18,9 @@ public class FruitServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		Fruit fruit = new Fruit("いちご", 700);
+		request.setAttribute("fruit", fruit);
+		
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/exercise_7/fruit.jsp");
 		requestDispatcher.forward(request, response);
 		
