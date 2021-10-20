@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<input type="text" name="name">
+	<input type="submit" value="送信">
 </body>
 </html>
