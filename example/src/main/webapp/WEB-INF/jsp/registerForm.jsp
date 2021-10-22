@@ -7,7 +7,7 @@
 <title>ユーザー登録入力画面</title>
 </head>
 <body>
-	<form action="" method="post">
+	<form action="/RegisterUser" method="post">
 	
 		ログインID：<input type="text" name="id"><br>
 		パスワード：<input type="password" name="pass"><br>
