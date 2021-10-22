@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import register.model.User;
+
 /**
  * Servlet implementation class RegisterUser
  */
@@ -30,10 +32,10 @@ public class RegisterUser extends HttpServlet {
 		String pass = request.getParameter("pass");
 		String name = request.getParameter("name");
 		
+		User user = new User(id, pass, name);
+		
 		HttpSession httpSession = request.getSession();
-		httpSession.setAttribute("id", id);
-		httpSession.setAttribute("pass", pass);
-		httpSession.setAttribute("name", name);
+		httpSession.setAttribute("user", user);
 		
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("");
 		requestDispatcher.forward(request, response);
