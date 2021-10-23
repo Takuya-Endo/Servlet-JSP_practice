@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class FruitServlet
@@ -19,9 +20,11 @@ public class FruitServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		Fruit fruit = new Fruit("いちご", 700);
-		request.setAttribute("fruit", fruit);
 		
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/exercise_7/fruit.jsp");
+		HttpSession httpSession = request.getSession(false);
+		httpSession.setAttribute("fruit", fruit);
+		
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/exercise_8/fruit.jsp");
 		requestDispatcher.forward(request, response);
 		
 	}
