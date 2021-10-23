@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import register.model.RegisterUserLogic;
 import register.model.User;
 
 /**
@@ -23,7 +24,18 @@ public class RegisterUser extends HttpServlet {
 		
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/registerForm.jsp");
 		requestDispatcher.forward(request, response);
-
+		
+		
+		
+		
+		RegisterUserLogic registerUserLogic = new RegisterUserLogic();
+		HttpSession httpSession = request.getSession(false);
+		User user = (User) httpSession.getAttribute("user");
+		registerUserLogic.registUserInfo(user);
+		
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/registerDone.jsp");
+		requestDispatcher.forward(request, response);
+		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -37,7 +49,7 @@ public class RegisterUser extends HttpServlet {
 		HttpSession httpSession = request.getSession();
 		httpSession.setAttribute("user", user);
 		
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/registerConfirm.jsp");
 		requestDispatcher.forward(request, response);
 		
 	}

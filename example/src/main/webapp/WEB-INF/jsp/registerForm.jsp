@@ -7,7 +7,7 @@
 <title>ユーザー登録入力画面</title>
 </head>
 <body>
-	<form action="/RegisterUser" method="post">
+	<form method="post" action="<%= request.getContextPath() %>/RegisterUser">
 	
 		ログインID：<input type="text" name="id"><br>
 		パスワード：<input type="password" name="pass"><br>
