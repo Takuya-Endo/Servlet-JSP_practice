@@ -11,6 +11,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import siteEV.model.SiteEV;
+import siteEV.model.SiteEVLogic;
+
 @WebServlet("/MinatoIndex")
 public class MinatoIndex extends HttpServlet {
 
@@ -18,16 +21,27 @@ public class MinatoIndex extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String action = request.getParameter("action");
-		
-		
 		ServletContext servletContext = this.getServletContext();
-		
+		SiteEVLogic logic = new SiteEVLogic();
 		
 		if (Objects.isNull(action)) {
+			SiteEV siteEV = new SiteEV();
+			servletContext.setAttribute("siteEV", siteEV);
+		}
+		
+		if ("like".equalsIgnoreCase(action)) {
 			
-		} else if ("like".equalsIgnoreCase(action)) {
+			SiteEV siteEV = (SiteEV) servletContext.getAttribute("siteEV");
+			logic.addLike(siteEV);
+			servletContext.setAttribute("siteEV", siteEV);
 			
-		} else if ("dislike".equalsIgnoreCase(action)) {
+		}
+		
+		if ("dislike".equalsIgnoreCase(action)) {
+			
+			SiteEV siteEV = (SiteEV) servletContext.getAttribute("siteEV");
+			logic.addDislike(siteEV);
+			servletContext.setAttribute("siteEV", siteEV);
 			
 		}
 		

@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class FruitServlet
  */
-@WebServlet("/FruitServlet")
+@WebServlet("/FruitServlet7")
 public class FruitServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

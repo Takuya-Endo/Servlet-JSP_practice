@@ -3751,3 +3751,169 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:38:28.059
 !MESSAGE executing callback sts4.classpath.oGXFhagk SUCCESS [done]
+
+!ENTRY org.eclipse.wst.server.core 4 0 2021-10-23 16:21:02.894
+!MESSAGE サーバー Tomcat9_Java11 は起動に失敗しました。
+
+!ENTRY org.eclipse.wst.server.core 4 0 2021-10-23 16:22:57.258
+!MESSAGE サーバー Tomcat9_Java11 は起動に失敗しました。
+
+!ENTRY org.eclipse.jst.server.core 4 0 2021-10-23 16:23:11.542
+!MESSAGE プロファイラーが構成されていないため、プロファイリング・モードで起動することができません。
+
+!ENTRY org.eclipse.wst.server.core 4 0 2021-10-23 16:23:43.012
+!MESSAGE サーバー Tomcat9_Java11 は起動に失敗しました。
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:26:37.897
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.oGXFhagk
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:26:37.903
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.oGXFhagk
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:26:37.909
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:26:37.916
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.oGXFhagk => OK
+!SESSION 2021-10-23 16:26:51.078 -----------------------------------------------
+eclipse.buildId=4.20.0.I20210611-1600
+java.version=16.0.1
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2021-10-23 16:27:07.714
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-10-23 16:27:07.714
+!MESSAGE CTRL+SHIFT+T の競合が発生しました:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,型を開く,
+		型を Java エディターで開きます,
+		Category(org.eclipse.ui.category.navigate,ナビゲート,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3344c1d7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,ワークスペース内のシンボルにジャンプ,
+		,
+		Category(org.eclipse.lsp4e.category,言語サーバー,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@73b034ca,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2021-10-23 16:27:21.360
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2021-10-23 16:27:21.367
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.jface 2 0 2021-10-23 16:27:30.440
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-10-23 16:27:30.440
+!MESSAGE ALT+CTRL+T の競合が発生しました:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,プロパティーの表示,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@621508de,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,選択されたローカル・ターミナルを開く,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,ターミナル・コマンド,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@404c8c9d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2021-10-23 16:28:03.129
+!MESSAGE サーバー Tomcat9_Java11 は起動に失敗しました。
+
+!ENTRY org.eclipse.wst.server.core 4 0 2021-10-23 16:35:30.126
+!MESSAGE サーバー Tomcat9_Java11 は起動に失敗しました。
+
+!ENTRY org.eclipse.ui 2 2 2021-10-23 16:37:03.790
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2021-10-23 16:44:18.197
+!MESSAGE サーバー Tomcat9_Java11 は起動に失敗しました。
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:46:16.830
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:46:16.838
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@11d1c51a[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=1002)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:46:16.863
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:46:16.993
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:46:27.471
+!MESSAGE 起動から初期化までの Boot LS 起動時間: 10549ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:46:28.157
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.PFWqNeIWisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:46:28.173
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:46:28.187
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:46:28.198
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:46:28.202
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:46:28.207
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.PFWqNeIW => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:46:28.215
+!MESSAGE classpath=34 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:46:28.228
+!MESSAGE buffering callback sts4.classpath.PFWqNeIW example false 34
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:46:28.234
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:46:28.240
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:46:28.252
+!MESSAGE buffering callback sts4.classpath.PFWqNeIW Part1 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:46:28.256
+!MESSAGE executing callback sts4.classpath.PFWqNeIW 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:46:29.306
+!MESSAGE executing callback sts4.classpath.PFWqNeIW SUCCESS [done]
+
+!ENTRY org.eclipse.jface 2 0 2021-10-23 16:47:21.746
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-10-23 16:47:21.746
+!MESSAGE CTRL+SHIFT+C の競合が発生しました:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,行コメントの切り替え,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E 言語構成,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6fbcbd62,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,コメントの切り替え,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring 汎用テキスト・エディター,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4092d5bf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)

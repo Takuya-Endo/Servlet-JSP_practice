@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
+<%@ page import="siteEV.model.SiteEV" %>
+
+<% SiteEV siteEV = (SiteEV) application.getAttribute("siteEV"); %>
+
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
@@ -10,9 +15,9 @@
 		<h1>湊くんのページへようこそ</h1><br>
 		
 		<a href="<%= request.getContextPath() %>/MinatoIndex?action=like">よいね</a>
-		：人　
+		<%= siteEV.getLike() %>：人　
 		<a href="<%= request.getContextPath() %>/MinatoIndex?action=dislike">よくないね</a>
-		：人
+		<%= siteEV.getDislike() %>：人
 		
 	</body>
 </html>
