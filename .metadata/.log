@@ -3917,3 +3917,66 @@ Binding(CTRL+SHIFT+C,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:01.802
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.PFWqNeIW
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:01.808
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.PFWqNeIW
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:01.814
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:01.820
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.PFWqNeIW => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:11.595
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:11.615
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@11d1c51a[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=1002)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:11.622
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:20.060
+!MESSAGE 起動から初期化までの Boot LS 起動時間: 8427ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:20.479
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.imzQUTMVisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:20.492
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:20.499
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:20.512
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:20.518
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:20.523
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.imzQUTMV => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:20.528
+!MESSAGE classpath=34 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:20.548
+!MESSAGE buffering callback sts4.classpath.imzQUTMV example false 34
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:20.561
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:20.574
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:20.587
+!MESSAGE buffering callback sts4.classpath.imzQUTMV Part1 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:20.593
+!MESSAGE executing callback sts4.classpath.imzQUTMV 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 16:59:21.839
+!MESSAGE executing callback sts4.classpath.imzQUTMV SUCCESS [done]

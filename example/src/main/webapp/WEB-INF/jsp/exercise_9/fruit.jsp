@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<%@page import="exercise_8.Fruit" %>
+<%@page import="exercise_9.Fruit" %>
 
-<% Fruit fruit = (Fruit) session.getAttribute("fruit"); %>
+<% Fruit fruit = (Fruit) application.getAttribute("fruit"); %>
 
 <!DOCTYPE html>
 <html>
