@@ -3604,3 +3604,87 @@ Caused by: java.util.ConcurrentModificationException
 	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:34)
 	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:80)
 	... 29 more
+
+!ENTRY org.eclipse.jface 2 0 2021-10-23 15:14:47.978
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-10-23 15:14:47.978
+!MESSAGE CTRL+SHIFT+C の競合が発生しました:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,行コメントの切り替え,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E 言語構成,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@ba901a5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,コメントの切り替え,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring 汎用テキスト・エディター,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5b7fcb1f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:14:49.493
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.wkcoVVUv
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:14:49.498
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.wkcoVVUv
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:14:49.503
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:14:49.509
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.wkcoVVUv => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:16:15.992
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:16:15.999
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1e7135cf[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=1002)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:16:16.005
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:16:25.676
+!MESSAGE 起動から初期化までの Boot LS 起動時間: 9656ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:16:26.157
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.tZoeiCnCisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:16:26.171
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:16:26.177
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:16:26.183
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:16:26.187
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:16:26.194
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.tZoeiCnC => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:16:26.199
+!MESSAGE classpath=34 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:16:26.209
+!MESSAGE buffering callback sts4.classpath.tZoeiCnC example false 34
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:16:26.222
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:16:26.233
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:16:26.238
+!MESSAGE buffering callback sts4.classpath.tZoeiCnC Part1 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:16:26.243
+!MESSAGE executing callback sts4.classpath.tZoeiCnC 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-23 15:16:28.097
+!MESSAGE executing callback sts4.classpath.tZoeiCnC SUCCESS [done]
