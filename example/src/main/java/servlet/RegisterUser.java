@@ -1,6 +1,7 @@
 package servlet;
 
 import java.io.IOException;
+import java.util.Objects;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -22,18 +23,24 @@ public class RegisterUser extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/registerForm.jsp");
-		requestDispatcher.forward(request, response);
+		String action = request.getParameter("action");		
+		String url = "";
 		
+		if (Objects.isNull(action)) {
+			url = "/WEB-INF/jsp/registerForm.jsp";
+		} else if ("done".equals(action)) {
+			
+			RegisterUserLogic registerUserLogic = new RegisterUserLogic();
+			HttpSession httpSession = request.getSession();
+			User user = (User) httpSession.getAttribute("user");
+			registerUserLogic.registUserInfo(user);
+			
+			url = "/WEB-INF/jsp/registerDone.jsp";
+			httpSession.removeAttribute("user");
+			
+		}
 		
-		
-		
-		RegisterUserLogic registerUserLogic = new RegisterUserLogic();
-		HttpSession httpSession = request.getSession(false);
-		User user = (User) httpSession.getAttribute("user");
-		registerUserLogic.registUserInfo(user);
-		
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/registerDone.jsp");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher(url);
 		requestDispatcher.forward(request, response);
 		
 	}

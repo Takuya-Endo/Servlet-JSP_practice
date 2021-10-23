@@ -12,11 +12,9 @@
 <title>ユーザー登録確認画面</title>
 </head>
 <body>
-	<form method="get" action="done">
-		<p>ログインID：<%= user.getId() %></p>
-		<p>名前：<%= user.getName() %></p>
-		<a href="<%= request.getContextPath() %>/RegisterUser">戻る</a>　
-		<a href="<%= request.getContextPath() %>/RegisterUser">登録</a>
-	</form>
+	<p>ログインID：<%= user.getId() %></p>
+	<p>名前：<%= user.getName() %></p>
+	<a href="<%= request.getContextPath() %>/RegisterUser">戻る</a>　
+	<a href="<%= request.getContextPath() %>/RegisterUser?action=done">登録</a>
 </body>
 </html>
