@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import model.User;
+
 @WebServlet("/Login")
 public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -21,6 +23,15 @@ public class Login extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String name = request.getParameter("name");
+		String pass = request.getParameter("pass");
+		
+		User user = new User(name, pass);
+		request.setAttribute("user", user);		
+		
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("");
+		requestDispatcher.forward(request, response);
 		
 	}
 

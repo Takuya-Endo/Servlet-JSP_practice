@@ -9,7 +9,7 @@
 	<body>
 		<h1>どこつぶへようこそ</h1>
 		
-		<form method="post" action="">
+		<form method="post" action="/Login">
 		
 			ログインID：<input type="text" name="name"><br>
 			パスワード：<input type="password" name="pass"><br>
