@@ -1,9 +1,14 @@
 <%@ page
 	language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"
 	import="model.User"
+	import="model.Mutter"
+	import="java.util.ArrayList"
 %>
 
-<% User user = (User) session.getAttribute("user"); %>
+<%
+	User user = (User) session.getAttribute("user");
+	ArrayList<Mutter> mutterList = (ArrayList<Mutter>) application.getAttribute("mutterList");
+%>
 
 <!DOCTYPE html>
 <html>
@@ -16,6 +21,8 @@
 		
 		<p>ようこそ<%= user.getName() %>さん</p>
 		
+		<a href="<%= request.getContextPath() %>/Logout">ログアウト</a>
+		
 		<form method="post" action="<%= request.getContextPath() %>/Main">
 			
 			<input type="text" name="mutter">
@@ -23,7 +30,11 @@
 		
 		</form>
 		
-		<a href="<%= request.getContextPath() %>/Logout">ログアウト</a>
+		<% for (Mutter mutter : mutterList) { %>
+			
+			<p><%= mutter.getUserName() %>：<%= mutter.getText() %></p>
+			
+		<% } %>
 		
 	</body>
 </html>
