@@ -6188,3 +6188,6 @@ java.util.concurrent.TimeoutException
 
 !ENTRY mergedoc.encoding 2 0 2021-10-31 17:43:45.687
 !MESSAGE リソース '/dokoTsubu/src/main/webapp/META-INF/jsp/LoginResult.jsp' が存在しません。
+
+!ENTRY org.eclipse.ui 2 2 2021-10-31 18:11:50.023
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)

@@ -21,7 +21,11 @@
 			<a href="<%= request.getContextPath() %>">トップへ</a>
 		
 		<% } else { %>
-		
+			
+			<p>ログインに成功しました</p>
+			<p>ようこそ<%= user.getName() %>さん</p>
+			<a href="<%= request.getContextPath() %>/Main">つぶやきの投稿・閲覧へ</a>
+			
 		<% } %>
 		
 	</body>

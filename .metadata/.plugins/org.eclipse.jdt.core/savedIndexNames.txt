@@ -23,7 +23,6 @@ INDEX VERSION 1.131+C:\Users\home\Desktop\DMMWEBCAMP\Java\Servlet&JSP_practice\.
 1316207499.index
 418361468.index
 4212968847.index
-2941818816.index
 2842855883.index
 2055455794.index
 2338962385.index
