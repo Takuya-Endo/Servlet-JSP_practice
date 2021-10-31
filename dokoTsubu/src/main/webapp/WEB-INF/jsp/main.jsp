@@ -16,6 +16,13 @@
 		
 		<p>ようこそ<%= user.getName() %>さん</p>
 		
+		<form method="post" action="<%= request.getContextPath() %>/Main">
+			
+			<input type="text" name="mutter">
+			<input type="submit" value="つぶやく">
+		
+		</form>
+		
 		<a href="<%= request.getContextPath() %>/Logout">ログアウト</a>
 		
 	</body>

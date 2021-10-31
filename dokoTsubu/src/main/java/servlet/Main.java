@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import model.Mutter;
+import model.PostMutterLogic;
 import model.User;
 
 @WebServlet("/Main")
@@ -45,6 +46,22 @@ public class Main extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		HttpSession httpSession = request.getSession();
+		User user = (User) httpSession.getAttribute("user");
+		String mutterStr = request.getParameter("mutter");
+		Mutter mutter = new Mutter(user.getName(), mutterStr);
+		
+		ServletContext servletContext = this.getServletContext();
+		ArrayList<Mutter> mutterList = (ArrayList<Mutter>) servletContext.getAttribute("mutterList");
+		
+		PostMutterLogic postMutterLogic = new PostMutterLogic();
+		postMutterLogic.execute(mutter, mutterList);
+		
+		servletContext.setAttribute("mutterList", mutterList);
+		
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/main.jsp");
+		requestDispatcher.forward(request, response);
 		
 	}
 
