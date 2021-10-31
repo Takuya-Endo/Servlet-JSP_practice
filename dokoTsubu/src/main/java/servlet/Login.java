@@ -28,7 +28,7 @@ public class Login extends HttpServlet {
 		String pass = request.getParameter("pass");
 		
 		User user = new User(name, pass);
-		request.setAttribute("user", user);		
+		
 		
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("");
 		requestDispatcher.forward(request, response);
