@@ -8,7 +8,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import model.LoginLogic;
 import model.User;
 
 @WebServlet("/Login")
@@ -28,9 +30,16 @@ public class Login extends HttpServlet {
 		String pass = request.getParameter("pass");
 		
 		User user = new User(name, pass);
+		LoginLogic loginLogic = new LoginLogic();
+
+		if (loginLogic.execute(user)) {
+			
+			HttpSession httpSession = request.getSession();
+			httpSession.setAttribute("user", user);
+			
+		}
 		
-		
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/loginResult.jsp");
 		requestDispatcher.forward(request, response);
 		
 	}
