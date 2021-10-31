@@ -16,5 +16,7 @@
 		
 		<p>ようこそ<%= user.getName() %>さん</p>
 		
+		<a href="<%= request.getContextPath() %>/Logout">ログアウト</a>
+		
 	</body>
 </html>
