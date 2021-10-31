@@ -1,5 +1,6 @@
 <%@ page
 	language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"
+	import="java.util.Objects"
 	import="model.User"
 	import="model.Mutter"
 	import="java.util.ArrayList"
@@ -22,6 +23,8 @@
 		<p>ようこそ<%= user.getName() %>さん</p>
 		
 		<a href="<%= request.getContextPath() %>/Logout">ログアウト</a>
+		
+		<%= Objects.nonNull(request.getAttribute("error")) ? "\n" + request.getAttribute("error") : "" %>
 		
 		<form method="post" action="<%= request.getContextPath() %>/Main">
 			

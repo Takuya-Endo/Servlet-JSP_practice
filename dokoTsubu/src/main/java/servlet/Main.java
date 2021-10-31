@@ -50,6 +50,14 @@ public class Main extends HttpServlet {
 		HttpSession httpSession = request.getSession();
 		User user = (User) httpSession.getAttribute("user");
 		String mutterStr = request.getParameter("mutter");
+		
+		if ("".equals(mutterStr)) {
+			request.setAttribute("error", "つぶやきが入力されていません");
+			RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/main.jsp");
+			requestDispatcher.forward(request, response);
+			return;
+		}
+		
 		Mutter mutter = new Mutter(user.getName(), mutterStr);
 		
 		ServletContext servletContext = this.getServletContext();
