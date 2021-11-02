@@ -6258,3 +6258,81 @@ Binding(ALT+CTRL+T,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:51:50.512
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:51:50.525
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@13b6f82d[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=1002)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:51:50.593
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:51:50.741
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:51:59.855
+!MESSAGE 起動から初期化までの Boot LS 起動時間: 9215ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:52:01.686
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.amWTSLXEisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:52:01.730
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:52:01.756
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:52:01.764
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:52:01.783
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:52:01.811
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.amWTSLXE => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:52:01.817
+!MESSAGE classpath=34 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:52:01.831
+!MESSAGE buffering callback sts4.classpath.amWTSLXE example false 34
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:52:01.839
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:52:01.848
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:52:01.853
+!MESSAGE buffering callback sts4.classpath.amWTSLXE Part1 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:52:01.860
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:52:01.868
+!MESSAGE classpath=34 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:52:01.882
+!MESSAGE buffering callback sts4.classpath.amWTSLXE dokoTsubu false 34
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:52:01.888
+!MESSAGE executing callback sts4.classpath.amWTSLXE 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:52:03.494
+!MESSAGE executing callback sts4.classpath.amWTSLXE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:56:36.433
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.amWTSLXE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:56:36.439
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.amWTSLXE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:56:36.445
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-01 05:56:36.464
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.amWTSLXE => OK
+
+!ENTRY org.eclipse.ui 2 2 2021-11-01 05:57:00.426
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
