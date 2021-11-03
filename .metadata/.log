@@ -6336,3 +6336,135 @@ Binding(ALT+CTRL+T,
 
 !ENTRY org.eclipse.ui 2 2 2021-11-01 05:57:00.426
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2021-11-03 17:02:46.249 -----------------------------------------------
+eclipse.buildId=4.20.0.I20210611-1600
+java.version=16.0.1
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2021-11-03 17:04:13.867
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-11-03 17:04:13.867
+!MESSAGE CTRL+SHIFT+T の競合が発生しました:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,型を開く,
+		型を Java エディターで開きます,
+		Category(org.eclipse.ui.category.navigate,ナビゲート,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6a08113d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,ワークスペース内のシンボルにジャンプ,
+		,
+		Category(org.eclipse.lsp4e.category,言語サーバー,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@480fb706,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2021-11-03 17:04:33.174
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2021-11-03 17:04:33.184
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui 2 2 2021-11-03 17:07:17.346
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.jface 2 0 2021-11-03 17:07:44.004
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-11-03 17:07:44.004
+!MESSAGE ALT+CTRL+T の競合が発生しました:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,プロパティーの表示,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@23673954,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,選択されたローカル・ターミナルを開く,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,ターミナル・コマンド,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4a02197b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:09:35.548
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:09:35.568
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1f6d2cad[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=1002)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:09:35.623
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:09:35.856
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:10:13.000
+!MESSAGE 起動から初期化までの Boot LS 起動時間: 37334ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:10:13.955
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.rjOSkTlLisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:10:14.009
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:10:14.025
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:10:14.038
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:10:14.049
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:10:14.059
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.rjOSkTlL => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:10:14.067
+!MESSAGE classpath=34 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:10:14.083
+!MESSAGE buffering callback sts4.classpath.rjOSkTlL example false 34
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:10:14.090
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:10:14.099
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:10:14.123
+!MESSAGE buffering callback sts4.classpath.rjOSkTlL Part1 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:10:14.158
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:10:14.169
+!MESSAGE classpath=34 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:10:14.189
+!MESSAGE buffering callback sts4.classpath.rjOSkTlL dokoTsubu false 34
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:10:14.198
+!MESSAGE executing callback sts4.classpath.rjOSkTlL 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-03 17:10:16.237
+!MESSAGE executing callback sts4.classpath.rjOSkTlL FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2021-11-03 17:10:16.252
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
