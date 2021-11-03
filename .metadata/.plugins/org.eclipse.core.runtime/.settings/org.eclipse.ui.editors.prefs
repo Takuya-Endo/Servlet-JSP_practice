@@ -11,6 +11,7 @@ printMargin=true
 printMarginColor=255,0,0
 printMarginColumn=120
 quickdiff.defaultProvider=org.eclipse.egit.ui.internal.decorators.GitQuickDiffProvider
+quickdiff.quickDiff=false
 showEnclosedSpaces=false
 showLeadingSpaces=false
 showTrailingSpaces=false
