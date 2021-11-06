@@ -7766,3 +7766,204 @@ Caused by: java.lang.NullPointerException: Cannot invoke "java.util.concurrent.C
 
 !ENTRY org.eclipse.ui 2 2 2021-11-07 05:12:22.245
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:27:16.259
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:27:16.275
+!MESSAGE classpath=35 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:27:16.306
+!MESSAGE buffering callback sts4.classpath.wLtbkTGL dokoTsubu false 35
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:27:16.306
+!MESSAGE executing callback sts4.classpath.wLtbkTGL 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:27:16.631
+!MESSAGE executing callback sts4.classpath.wLtbkTGL SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:43:30.700
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.wLtbkTGL
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:43:30.706
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.wLtbkTGL
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:43:30.712
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:43:30.717
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.wLtbkTGL => OK
+!SESSION 2021-11-07 05:45:02.894 -----------------------------------------------
+eclipse.buildId=4.20.0.I20210611-1600
+java.version=16.0.1
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2021-11-07 05:45:19.363
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-11-07 05:45:19.363
+!MESSAGE CTRL+SHIFT+T の競合が発生しました:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,型を開く,
+		型を Java エディターで開きます,
+		Category(org.eclipse.ui.category.navigate,ナビゲート,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@251db193,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,ワークスペース内のシンボルにジャンプ,
+		,
+		Category(org.eclipse.lsp4e.category,言語サーバー,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@109f95b1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:40.821
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:40.852
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@2aca36f4[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=1002)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:40.868
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:41.008
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.jface 2 0 2021-11-07 05:45:47.451
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-11-07 05:45:47.451
+!MESSAGE CTRL+- の競合が発生しました:
+Binding(CTRL+-,
+	ParameterizedCommand(Command(junit.extensions.eclipse.quick.pde.command.PDEJUnitRunAction,JUnit Plug-in テスト,
+		PDE JUnitでテストを実行します．,
+		Category(junit.extensions.eclipse.quick.command.category,Quick JUnit,Quick JUnitアクション,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4a31924e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+-,
+	ParameterizedCommand(Command(org.eclipse.gef.zoom_out,ズームアウト,
+		ズームアウト,
+		Category(org.eclipse.gef.category.view,ビュー,ビュー,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f157271,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+-,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.zoomOut,ズームアウト,
+		テキストのズーム・アウト - テキスト・エディターのデフォルト・フォント・サイズを小さくします,
+		Category(org.eclipse.ui.category.textEditor,テキスト編集,テキスト編集コマンド,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@536af138,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:49.063
+!MESSAGE 起動から初期化までの Boot LS 起動時間: 8161ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:49.837
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ESKZJkwoisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:49.864
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:49.889
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:49.914
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:49.921
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:49.927
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ESKZJkwo => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:49.938
+!MESSAGE classpath=35 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:49.960
+!MESSAGE buffering callback sts4.classpath.ESKZJkwo dokoTsubu false 35
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:49.984
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:50.011
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:50.018
+!MESSAGE buffering callback sts4.classpath.ESKZJkwo Part1 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:50.042
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:50.489
+!MESSAGE classpath=35 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:50.500
+!MESSAGE buffering callback sts4.classpath.ESKZJkwo example false 35
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:50.506
+!MESSAGE executing callback sts4.classpath.ESKZJkwo 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 05:45:52.179
+!MESSAGE executing callback sts4.classpath.ESKZJkwo SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2021-11-07 05:48:38.587
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2021-11-07 05:52:50.485
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2021-11-07 05:52:50.491
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 06:33:15.227
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 06:33:15.343
+!MESSAGE classpath=34 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 06:33:15.402
+!MESSAGE buffering callback sts4.classpath.ESKZJkwo dokoTsubu false 34
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 06:33:15.410
+!MESSAGE executing callback sts4.classpath.ESKZJkwo 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 06:33:15.572
+!MESSAGE executing callback sts4.classpath.ESKZJkwo SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 06:34:17.700
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 06:34:17.715
+!MESSAGE classpath=35 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 06:34:17.737
+!MESSAGE buffering callback sts4.classpath.ESKZJkwo dokoTsubu false 35
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 06:34:17.746
+!MESSAGE executing callback sts4.classpath.ESKZJkwo 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 06:34:17.905
+!MESSAGE executing callback sts4.classpath.ESKZJkwo SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 06:34:33.604
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 06:34:33.630
+!MESSAGE classpath=36 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 06:34:33.650
+!MESSAGE buffering callback sts4.classpath.ESKZJkwo dokoTsubu false 35
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 06:34:33.655
+!MESSAGE executing callback sts4.classpath.ESKZJkwo 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 06:34:33.742
+!MESSAGE executing callback sts4.classpath.ESKZJkwo SUCCESS [done]

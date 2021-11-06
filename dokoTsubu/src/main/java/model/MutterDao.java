@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class MutterDao {
 
@@ -40,12 +41,16 @@ public class MutterDao {
 			String sql = "SELECT * FROM mutter";
 			
 			Class.forName("org.h2.Driver");
-			connection = DriverManager.getConnection("jdbc:h2:~/docoTsubu", "sa", "");
+			connection = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/docoTsubu", "sa", "");
 			preparedStatement = connection.prepareStatement(sql);
 			resultSet = preparedStatement.executeQuery();
 			
+			if (Objects.isNull(resultSet)) {
+				return mutterList;
+			}
+			
 			while (resultSet.next()) {
-				
+
 				String id = resultSet.getString("id");
 				String name = resultSet.getString("name");
 				String text = resultSet.getString("text");
@@ -84,10 +89,10 @@ public class MutterDao {
 			String name = mutter.getName();
 			String text = mutter.getText();
 			
-			String sql = "INSERT INTO (name, text) VALUES (1, 2)";
+			String sql = "INSERT INTO mutter (name, text) VALUES (?, ?)";
 			
 			Class.forName("org.h2.Driver");
-			connection = DriverManager.getConnection("jdbc:h2:~/docoTsubu", "sa", "");
+			connection = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/docoTsubu", "sa", "");
 			preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setString(1, name);
 			preparedStatement.setString(2, text);
