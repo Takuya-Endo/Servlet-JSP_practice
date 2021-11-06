@@ -5,8 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import exercise_13.Employee;
+import java.util.ArrayList;
 
 public class MutterDao {
 
@@ -27,48 +26,53 @@ public class MutterDao {
 //	ただし初回のみ自動作成のため、起動後複数データベース作成時は一度コンソールを閉じる必要あり
 //	ブラウザを閉じるだけではコンソール終了できないため、タスクバーのシステムアイコンを右クリックしてEXIT
 	
-	
-	
-	Connection connection = null;
-	PreparedStatement preparedStatement = null;
-	ResultSet resultSet = null;
-	Employee employee = null;
-	
-	try {
+	public ArrayList<Mutter> selectAll() {
 		
-		String sql = "SELECT * FROM employee";
 		
-		Class.forName("org.h2.Driver");
-		connection = DriverManager.getConnection("jdbc:h2:~/exercise_13", "sa", "");
-		preparedStatement = connection.prepareStatement(sql);
-		resultSet = preparedStatement.executeQuery();
+		Connection connection = null;
+		PreparedStatement preparedStatement = null;
+		ResultSet resultSet = null;
+		Mutter employee = null;
 		
-		while (resultSet.next()) {
-			
-			String id = resultSet.getString("id");
-			String name = resultSet.getString("name");
-			String age = resultSet.getString("age");
-			
-			employee = new Employee(id, name, age);
-			
-			System.out.println(employee.getId());
-			System.out.println(employee.getName());
-			System.out.println(employee.getAge());
-			
-		}
-		
-	} catch (ClassNotFoundException e) {
-		e.printStackTrace();
-	} catch (SQLException e) {
-		e.printStackTrace();
-	} finally {
 		try {
-			resultSet.close();
-			preparedStatement.close();
-			connection.close();
+			
+			String sql = "SELECT * FROM mutter";
+			
+			Class.forName("org.h2.Driver");
+			connection = DriverManager.getConnection("jdbc:h2:~/docoTsubu", "sa", "");
+			preparedStatement = connection.prepareStatement(sql);
+			resultSet = preparedStatement.executeQuery();
+			
+			while (resultSet.next()) {
+				
+				String id = resultSet.getString("id");
+				String name = resultSet.getString("name");
+				String text = resultSet.getString("text");
+				
+				employee = new Mutter(id, name, text);
+				
+				System.out.println(employee.getId());
+				System.out.println(employee.getName());
+				System.out.println(employee.getText());
+				
+			}
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
 		} catch (SQLException e) {
 			e.printStackTrace();
+		} finally {
+			try {
+				resultSet.close();
+				preparedStatement.close();
+				connection.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
 		}
+		
+		return new ArrayList<Mutter>();
+		
 	}
 	
 }

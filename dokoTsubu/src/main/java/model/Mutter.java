@@ -5,21 +5,22 @@ import java.io.Serializable;
 public class Mutter implements Serializable {
 	
 	private String id;
-	private String userName;
+	private String name;
 	private String text;
 	
 	public Mutter() { }
 	
-	public Mutter(String userName, String text) {
-		this.userName = userName;
+	public Mutter(String id, String name, String text) {
+		this.id = id;
+		this.name = name;
 		this.text = text;
 	}
 	
 	public String getId() {
 		return id;
 	}
-	public String getUserName() {
-		return userName;
+	public String getName() {
+		return name;
 	}
 	public String getText() {
 		return text;
@@ -28,8 +29,8 @@ public class Mutter implements Serializable {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public void setText(String text) {
 		this.text = text;

@@ -32,7 +32,7 @@ public class SampleEmployee {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 		ResultSet resultSet = null;
-		Employee employee = null;
+		Mutter employee = null;
 		
 		try {
 			
@@ -49,7 +49,7 @@ public class SampleEmployee {
 				String name = resultSet.getString("name");
 				String age = resultSet.getString("age");
 				
-				employee = new Employee(id, name, age);
+				employee = new Mutter(id, name, age);
 				
 				System.out.println(employee.getId());
 				System.out.println(employee.getName());
