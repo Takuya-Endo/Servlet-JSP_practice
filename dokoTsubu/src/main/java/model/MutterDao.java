@@ -32,7 +32,8 @@ public class MutterDao {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 		ResultSet resultSet = null;
-		Mutter employee = null;
+		Mutter mutter = null;
+		ArrayList<Mutter> mutterList = new ArrayList<Mutter>();
 		
 		try {
 			
@@ -49,11 +50,8 @@ public class MutterDao {
 				String name = resultSet.getString("name");
 				String text = resultSet.getString("text");
 				
-				employee = new Mutter(id, name, text);
-				
-				System.out.println(employee.getId());
-				System.out.println(employee.getName());
-				System.out.println(employee.getText());
+				mutter = new Mutter(id, name, text);
+				mutterList.add(mutter);
 				
 			}
 			
@@ -71,7 +69,46 @@ public class MutterDao {
 			}
 		}
 		
-		return new ArrayList<Mutter>();
+		return mutterList;
+		
+	}
+	
+	public int insert(Mutter mutter) {
+		
+		Connection connection = null;
+		PreparedStatement preparedStatement = null;
+		int result = 0;
+		
+		try {
+			
+			String name = mutter.getName();
+			String text = mutter.getText();
+			
+			String sql = "INSERT INTO (name, text) VALUES (1, 2)";
+			
+			Class.forName("org.h2.Driver");
+			connection = DriverManager.getConnection("jdbc:h2:~/docoTsubu", "sa", "");
+			preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setString(1, name);
+			preparedStatement.setString(2, text);
+			result = preparedStatement.executeUpdate();
+			
+			System.out.println(result + "件追加");
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				preparedStatement.close();
+				connection.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return result;
 		
 	}
 	

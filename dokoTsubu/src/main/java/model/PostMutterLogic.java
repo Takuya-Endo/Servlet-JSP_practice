@@ -1,12 +1,11 @@
 package model;
 
-import java.util.ArrayList;
-
 public class PostMutterLogic {
 
-	public void execute(Mutter mutter, ArrayList<Mutter> mutterList) {
+	public void execute(Mutter mutter) {
 		
-		mutterList.add(mutter);
+		MutterDao mutterDao = new MutterDao();
+		mutterDao.insert(mutter);
 	
 	}
 	

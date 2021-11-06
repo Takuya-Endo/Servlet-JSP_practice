@@ -28,7 +28,7 @@
 		
 		<form method="post" action="<%= request.getContextPath() %>/Main">
 			
-			<input type="text" name="mutter">
+			<input type="text" name="text">
 			<input type="submit" value="つぶやく">
 		
 		</form>

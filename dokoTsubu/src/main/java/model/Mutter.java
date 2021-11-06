@@ -10,10 +10,14 @@ public class Mutter implements Serializable {
 	
 	public Mutter() { }
 	
-	public Mutter(String id, String name, String text) {
-		this.id = id;
+	public Mutter(String name, String text) {
 		this.name = name;
 		this.text = text;
+	}
+	
+	public Mutter(String id, String name, String text) {
+		this(name, text);
+		this.id = id;
 	}
 	
 	public String getId() {

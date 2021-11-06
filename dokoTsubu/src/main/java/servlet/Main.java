@@ -1,7 +1,6 @@
 package servlet;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Objects;
 
 import javax.servlet.RequestDispatcher;
@@ -24,14 +23,14 @@ public class Main extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		ServletContext servletContext = this.getServletContext();
-		ArrayList<Mutter> mutterList = (ArrayList<Mutter>) servletContext.getAttribute("mutterList");
-		
-		if (Objects.isNull(mutterList)) {
-			
-			mutterList = new ArrayList<Mutter>();
-			servletContext.setAttribute("mutterList", mutterList);
-			
-		}
+//		ArrayList<Mutter> mutterList = (ArrayList<Mutter>) servletContext.getAttribute("mutterList");
+//		
+//		if (Objects.isNull(mutterList)) {
+//			
+//			mutterList = new ArrayList<Mutter>();
+//			servletContext.setAttribute("mutterList", mutterList);
+//			
+//		}
 		
 		HttpSession httpSession = request.getSession();
 		User user = (User) httpSession.getAttribute("user");
@@ -49,22 +48,22 @@ public class Main extends HttpServlet {
 		
 		HttpSession httpSession = request.getSession();
 		User user = (User) httpSession.getAttribute("user");
-		String mutterStr = request.getParameter("mutter");
+		String text = request.getParameter("text");
 		
-		if ("".equals(mutterStr)) {
+		if ("".equals(text)) {
 			request.setAttribute("error", "つぶやきが入力されていません");
 			RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/main.jsp");
 			requestDispatcher.forward(request, response);
 			return;
 		}
 		
-		Mutter mutter = new Mutter(user.getName(), mutterStr);
+		Mutter mutter = new Mutter(user.getName(), text);
 		
 		ServletContext servletContext = this.getServletContext();
-		ArrayList<Mutter> mutterList = (ArrayList<Mutter>) servletContext.getAttribute("mutterList");
+//		ArrayList<Mutter> mutterList = (ArrayList<Mutter>) servletContext.getAttribute("mutterList");
 		
 		PostMutterLogic postMutterLogic = new PostMutterLogic();
-		postMutterLogic.execute(mutter, mutterList);
+		postMutterLogic.execute(mutter);
 		
 		servletContext.setAttribute("mutterList", mutterList);
 		
