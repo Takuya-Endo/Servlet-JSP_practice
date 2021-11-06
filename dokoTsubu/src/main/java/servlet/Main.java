@@ -25,6 +25,7 @@ public class Main extends HttpServlet {
 		
 		GetMutterListLogic getMutterListLogic = new GetMutterListLogic();
 		ArrayList<Mutter> mutterList = getMutterListLogic.execute();
+		request.setAttribute("mutterList", mutterList);
 		
 		if (Objects.isNull(mutterList)) {
 			
@@ -47,6 +48,10 @@ public class Main extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		GetMutterListLogic getMutterListLogic = new GetMutterListLogic();
+		ArrayList<Mutter> mutterList = getMutterListLogic.execute();
+		request.setAttribute("mutterList", mutterList);
+		
 		HttpSession httpSession = request.getSession();
 		User user = (User) httpSession.getAttribute("user");
 		String text = request.getParameter("text");
@@ -57,15 +62,13 @@ public class Main extends HttpServlet {
 			requestDispatcher.forward(request, response);
 			return;
 		}
-		
+
+//		ServletContext servletContext = this.getServletContext();
 		Mutter mutter = new Mutter(user.getName(), text);
 		PostMutterLogic postMutterLogic = new PostMutterLogic();
 		postMutterLogic.execute(mutter);
 		
-		GetMutterListLogic getMutterListLogic = new GetMutterListLogic();
-		ArrayList<Mutter> mutterList = getMutterListLogic.execute();
-		
-//		ServletContext servletContext = this.getServletContext();
+		mutterList = getMutterListLogic.execute();
 		request.setAttribute("mutterList", mutterList);
 		
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/main.jsp");

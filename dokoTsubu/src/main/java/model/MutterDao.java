@@ -41,7 +41,8 @@ public class MutterDao {
 			String sql = "SELECT * FROM mutter";
 			
 			Class.forName("org.h2.Driver");
-			connection = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/docoTsubu", "sa", "");
+			connection = DriverManager.getConnection("jdbc:h2:~/docoTsubu", "sa", "");
+//			connection = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/docoTsubu", "sa", "");
 			preparedStatement = connection.prepareStatement(sql);
 			resultSet = preparedStatement.executeQuery();
 			
@@ -92,7 +93,8 @@ public class MutterDao {
 			String sql = "INSERT INTO mutter (name, text) VALUES (?, ?)";
 			
 			Class.forName("org.h2.Driver");
-			connection = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/docoTsubu", "sa", "");
+			connection = DriverManager.getConnection("jdbc:h2:~/docoTsubu", "sa", "");
+//			connection = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/docoTsubu", "sa", "");
 			preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setString(1, name);
 			preparedStatement.setString(2, text);
