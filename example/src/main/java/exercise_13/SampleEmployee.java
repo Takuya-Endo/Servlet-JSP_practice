@@ -1,0 +1,27 @@
+package exercise_13;
+
+public class SampleEmployee {
+
+	public static void main(String[] args) {
+		
+//		データベースサーバの中二複数のデータベースがあり、
+//		さらにその中に複数のテーブルがあり、その中にレコードがある
+//		
+//		H2Database（データベースサーバ）
+//			↓
+//			→exercise_9（データベース名）
+//			→exercise_13（データベース名）
+//				↓
+//				→employeeテーブル
+//		
+//		H2Databaseは（Embedded）を使用
+//		URLの末尾（jdbc:h2:~/以下）を任意のデータベース名にすることで新規作成
+//		ユーザーメイとパスワードは入力不要で、ユーザー名：saのみ
+		
+		
+		
+		
+
+	}
+
+}
