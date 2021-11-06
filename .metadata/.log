@@ -7763,3 +7763,6 @@ Caused by: java.lang.NullPointerException: Cannot invoke "java.util.concurrent.C
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-07 04:07:53.581
 !MESSAGE executing callback sts4.classpath.wLtbkTGL SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2021-11-07 05:12:22.245
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)

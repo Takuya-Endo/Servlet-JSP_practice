@@ -1,10 +1,10 @@
 package servlet;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Objects;
 
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import model.GetMutterListLogic;
 import model.Mutter;
 import model.PostMutterLogic;
 import model.User;
@@ -22,15 +23,15 @@ public class Main extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		ServletContext servletContext = this.getServletContext();
-//		ArrayList<Mutter> mutterList = (ArrayList<Mutter>) servletContext.getAttribute("mutterList");
-//		
-//		if (Objects.isNull(mutterList)) {
-//			
+		GetMutterListLogic getMutterListLogic = new GetMutterListLogic();
+		ArrayList<Mutter> mutterList = getMutterListLogic.execute();
+		
+		if (Objects.isNull(mutterList)) {
+			
 //			mutterList = new ArrayList<Mutter>();
 //			servletContext.setAttribute("mutterList", mutterList);
-//			
-//		}
+			
+		}
 		
 		HttpSession httpSession = request.getSession();
 		User user = (User) httpSession.getAttribute("user");
@@ -58,14 +59,14 @@ public class Main extends HttpServlet {
 		}
 		
 		Mutter mutter = new Mutter(user.getName(), text);
-		
-		ServletContext servletContext = this.getServletContext();
-//		ArrayList<Mutter> mutterList = (ArrayList<Mutter>) servletContext.getAttribute("mutterList");
-		
 		PostMutterLogic postMutterLogic = new PostMutterLogic();
 		postMutterLogic.execute(mutter);
 		
-		servletContext.setAttribute("mutterList", mutterList);
+		GetMutterListLogic getMutterListLogic = new GetMutterListLogic();
+		ArrayList<Mutter> mutterList = getMutterListLogic.execute();
+		
+//		ServletContext servletContext = this.getServletContext();
+		request.setAttribute("mutterList", mutterList);
 		
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/main.jsp");
 		requestDispatcher.forward(request, response);

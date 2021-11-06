@@ -8,7 +8,7 @@
 
 <%
 	User user = (User) session.getAttribute("user");
-	ArrayList<Mutter> mutterList = (ArrayList<Mutter>) application.getAttribute("mutterList");
+	ArrayList<Mutter> mutterList = (ArrayList<Mutter>) request.getAttribute("mutterList");
 %>
 
 <!DOCTYPE html>
@@ -35,7 +35,7 @@
 		
 		<% for (Mutter mutter : mutterList) { %>
 			
-			<p><%= mutter.getUserName() %>：<%= mutter.getText() %></p>
+			<p><%= mutter.getName() %>：<%= mutter.getText() %></p>
 			
 		<% } %>
 		
