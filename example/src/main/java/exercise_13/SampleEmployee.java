@@ -34,6 +34,12 @@ public class SampleEmployee {
 			System.out.println(employee.getId() + "／" + employee.getName() + "／" + employee.getAge());
 		}
 		
+		System.out.println("\n削除結果：" + employeeDao.remove("4") + "\n");
+		
+		for (Employee employee : employeeDao.selectAll()) {
+			System.out.println(employee.getId() + "／" + employee.getName() + "／" + employee.getAge());
+		}
+		
 	}
 
 }

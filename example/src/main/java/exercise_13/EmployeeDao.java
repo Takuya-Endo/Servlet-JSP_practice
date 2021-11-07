@@ -91,4 +91,44 @@ public int insert(Employee employee) {
 		
 	}
 	
+public boolean remove(String id) {
+	
+	Connection connection = null;
+	PreparedStatement preparedStatement = null;
+	int result = 0;
+	
+	try {
+		
+		String sql = "DELETE FROM employee WHERE id = ?";
+		
+		Class.forName("org.h2.Driver");
+		connection = DriverManager.getConnection("jdbc:h2:~/exercise_13", "sa", "");
+		preparedStatement = connection.prepareStatement(sql);
+		preparedStatement.setInt(1, Integer.parseInt(id));
+		
+		result = preparedStatement.executeUpdate();
+		
+		if (result == 0) {
+			return false;
+		}
+		
+	} catch (ClassNotFoundException e) {
+		e.printStackTrace();
+		return false;
+	} catch (SQLException e) {
+		e.printStackTrace();
+		return false;
+	} finally {
+		try {
+			preparedStatement.close();
+			connection.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	return true;
+	
+}
+
 }
