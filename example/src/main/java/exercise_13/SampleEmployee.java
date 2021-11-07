@@ -1,10 +1,6 @@
 package exercise_13;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class SampleEmployee {
 
@@ -28,47 +24,11 @@ public class SampleEmployee {
 //		ブラウザを閉じるだけではコンソール終了できないため、タスクバーのシステムアイコンを右クリックしてEXIT
 		
 		
+		EmployeeDao employeeDao = new EmployeeDao();
+		ArrayList<Employee> employeeList =  employeeDao.selectAll();
 		
-		Connection connection = null;
-		PreparedStatement preparedStatement = null;
-		ResultSet resultSet = null;
-		Mutter employee = null;
-		
-		try {
-			
-			String sql = "SELECT * FROM employee";
-			
-			Class.forName("org.h2.Driver");
-			connection = DriverManager.getConnection("jdbc:h2:~/exercise_13", "sa", "");
-			preparedStatement = connection.prepareStatement(sql);
-			resultSet = preparedStatement.executeQuery();
-			
-			while (resultSet.next()) {
-				
-				String id = resultSet.getString("id");
-				String name = resultSet.getString("name");
-				String age = resultSet.getString("age");
-				
-				employee = new Mutter(id, name, age);
-				
-				System.out.println(employee.getId());
-				System.out.println(employee.getName());
-				System.out.println(employee.getAge());
-				
-			}
-			
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				resultSet.close();
-				preparedStatement.close();
-				connection.close();
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
+		for (Employee employee : employeeList) {
+			System.out.println(employee.getId() + "／" + employee.getName() + "／" + employee.getAge());
 		}
 		
 	}

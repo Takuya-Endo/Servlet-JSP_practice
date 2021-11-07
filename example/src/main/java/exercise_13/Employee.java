@@ -1,12 +1,12 @@
 package exercise_13;
 
-public class Mutter {
+public class Employee {
 	
 	private String id;
 	private String name;
 	private String age;
 
-	public Mutter(String id, String name, String age) {
+	public Employee(String id, String name, String age) {
 		this.id = id;
 		this.name = name;
 		this.age = age;
