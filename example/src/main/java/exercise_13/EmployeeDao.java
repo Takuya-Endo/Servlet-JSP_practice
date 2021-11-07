@@ -55,4 +55,40 @@ public class EmployeeDao {
 		
 	}
 	
+public int insert(Employee employee) {
+		
+		Connection connection = null;
+		PreparedStatement preparedStatement = null;
+		int result = 0;
+		
+		try {
+			
+			String sql = "INSERT INTO employee (id, name, age) VALUES (?, ?, ?)";
+			
+			Class.forName("org.h2.Driver");
+			connection = DriverManager.getConnection("jdbc:h2:~/exercise_13", "sa", "");
+			preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setInt(1, Integer.parseInt(employee.getId()));
+			preparedStatement.setString(2, employee.getName());
+			preparedStatement.setInt(3, Integer.parseInt(employee.getAge()));
+			
+			result = preparedStatement.executeUpdate();
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				preparedStatement.close();
+				connection.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return result;
+		
+	}
+	
 }

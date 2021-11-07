@@ -1,7 +1,5 @@
 package exercise_13;
 
-import java.util.ArrayList;
-
 public class SampleEmployee {
 
 	public static void main(String[] args) {
@@ -25,9 +23,14 @@ public class SampleEmployee {
 		
 		
 		EmployeeDao employeeDao = new EmployeeDao();
-		ArrayList<Employee> employeeList =  employeeDao.selectAll();
 		
-		for (Employee employee : employeeList) {
+		for (Employee employee : employeeDao.selectAll()) {
+			System.out.println(employee.getId() + "／" + employee.getName() + "／" + employee.getAge());
+		}
+		
+		System.out.println("\n" + employeeDao.insert(new Employee("4", "test4", "40")) + "件追加\n");
+		
+		for (Employee employee : employeeDao.selectAll()) {
 			System.out.println(employee.getId() + "／" + employee.getName() + "／" + employee.getAge());
 		}
 		
